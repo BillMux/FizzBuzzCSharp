@@ -10,10 +10,13 @@ namespace FizzBuzzCSharp
 
         }
 
-        public int Play(int number)
+        public string Play(int number)
         {
-            Console.WriteLine("Hello World!");
-            return number;
+            if (number % 3 == 0)
+            {
+                return "Fizz";
+            }
+            return number.ToString();
         }
     }
 }

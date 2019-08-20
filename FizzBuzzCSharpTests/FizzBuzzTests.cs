@@ -5,17 +5,26 @@ namespace Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
+        [Test]
+        public void TestReturnNumber()
         {
-            var fb = new FizzBuzz();
+            FizzBuzz fizzbuzz = new FizzBuzz();
+            Assert.AreEqual(fizzbuzz.Play(1), "1");
         }
 
         [Test]
-        public void Test1()
+        public void TestReturnFizz()
         {
-            var fizzbuzz = new FizzBuzz();
-            Assert.AreEqual(fizzbuzz.Play(1), 1);
+            FizzBuzz fizzbuzz = new FizzBuzz();
+            Assert.AreEqual(fizzbuzz.Play(3), "Fizz");
+            Assert.AreEqual(fizzbuzz.Play(6), "Fizz");
+        }
+
+        [Test]
+        public void TestReturnBuzz()
+        {
+            FizzBuzz fizzbuzz = new FizzBuzz();
+            Assert.AreEqual(fizzbuzz.Play(5), "Buzz");
         }
     }
 }
