@@ -2,11 +2,12 @@
 
 namespace FizzBuzzCSharp
 {
-    class Program
+    class FizzBuzz
     {
-        static void Main(string[] args)
+        public int Main(int number)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("hello");
+            return number;
         }
     }
 }

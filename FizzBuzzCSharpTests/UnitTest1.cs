@@ -1,13 +1,14 @@
-//using FizzBuzzCSharp;
+using FizzBuzzCSharp;
 using NUnit.Framework;
 
-namespace FizzBuzzTests
+namespace Tests
 {
     public class Tests
     {
         [SetUp]
         public void Setup()
         {
+            var fb = new FizzBuzz();
         }
 
         [Test]
