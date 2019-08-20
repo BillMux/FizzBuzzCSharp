@@ -10,5 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Program.cs" />
+    <Compile Remove="Properties\EmptyCSharpFile.cs" />
   </ItemGroup>
 </Project>

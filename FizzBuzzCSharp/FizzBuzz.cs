@@ -2,11 +2,18 @@
 
 namespace FizzBuzzCSharp
 {
-    class MainClass
+    public class FizzBuzz
     {
-        public static void Main(string[] args)
+
+        static void Main()
+        {
+
+        }
+
+        public int Play(int number)
         {
             Console.WriteLine("Hello World!");
+            return number;
         }
     }
 }

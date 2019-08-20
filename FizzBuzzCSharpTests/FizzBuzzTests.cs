@@ -14,7 +14,8 @@ namespace Tests
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            var fizzbuzz = new FizzBuzz();
+            Assert.AreEqual(fizzbuzz.Play(1), 1);
         }
     }
 }
